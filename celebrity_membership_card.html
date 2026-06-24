@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mike Chandler Family </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111111;
+      color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 420px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #1a1a1a 0%, #252525 100%);
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .hero {
+      padding: 28px;
+      background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+      color: #fff;
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .profile-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .followers {
+      color: rgba(255,255,255,0.9);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .follow-button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .follow-button:hover {
+      background: rgba(255,255,255,0.28);
+      transform: translateY(-1px);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 1.52rem;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin: 10px 0 0;
+      color: rgba(255,255,255,0.92);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .section {
+      padding: 24px 28px;
+    }
+
+    .section + .section {
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .section h2 {
+      margin: 0 0 16px;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #ff7b5c;
+    }
+
+    .option {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      transition: background 0.2s ease;
+    }
+
+    .option:hover {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .option:last-child {
+      margin-bottom: 0;
+    }
+
+    .option-title {
+      font-weight: 600;
+      margin: 0 0 6px;
+    }
+
+    .option-description {
+      margin: 0;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+
+    .section-note {
+      margin: 4px 0 16px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .price {
+      color: #fff;
+      font-weight: 700;
+      text-align: right;
+      min-width: 84px;
+    }
+
+    .highlight {
+      color: #ffb86c;
+    }
+
+    .footer {
+      padding: 20px 28px 28px;
+    }
+
+    .footer p {
+      margin: 0;
+      color: rgba(255,255,255,0.72);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="hero">
+      <div class="avatar">MC</div>
+      <div>
+        <h1>Mike Chandler Support Card</h1>
+        <p>Join Mike Chandler's inner circle by subscribing, donating, or becoming a member. Your support helps create exclusive content, live events, and behind-the-scenes access.</p>
+        <div class="profile-row">
+          <span class="followers">9M followers</span>
+          <button class="follow-button">Follow</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Subscription</h2>
+      <p class="section-note">Payment method selected by the client at checkout.</p>
+      <div class="option">
+        <div>
+          <p class="option-title">Silver Fan</p>
+          <p class="option-description">Yearly support starting at $150 with early access and shoutouts.</p>
+        </div>
+        <div class="price">$150/yr</div>
+      </div>
+      <div class="option">
+        <div>
+          <p class="option-title">Gold Insider</p>
+          <p class="option-description">Yearly support with exclusive livestreams, Q&amp;A, and priority updates.</p>
+        </div>
+        <div class="price">$250/yr</div>
+      </div>
+      <div class="option">
+        <div>
+          <p class="option-title">Platinum VIP</p>
+          <p class="option-description">Yearly VIP access, signed merch, and private community events.</p>
+        </div>
+        <div class="price">$450/yr</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Donation</h2>
+      <p class="section-note">Payment method selected by the client at checkout.</p>
+      <div class="option">
+        <div>
+          <p class="option-title">One-time Gift</p>
+          <p class="option-description">Make a one-time donation to support new projects and charity partnerships.</p>
+        </div>
+        <div class="price">Any Amount</div>
+      </div>
+      <div class="option">
+        <div>
+          <p class="option-title">Project Sponsor</p>
+          <p class="option-description">Fund a special campaign with public recognition and thank-you content.</p>
+        </div>
+        <div class="price"><span class="highlight">$100+</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Membership Card</h2>
+      <p class="section-note">Payment method selected by the Fans at checkout.</p>
+      <div class="option">
+        <div>
+          <p class="option-title">Champion Supporter</p>
+          <p class="option-description">$3,000 membership with a special reward and recognition for helping cover future hospital, bills, and urgent needs.</p>
+        </div>
+        <div class="price">$3,000</div>
+      </div>
+      <div class="option">
+        <div>
+          <p class="option-title">Legacy Patron</p>
+          <p class="option-description">$5,000 membership with premium benefits, heartfelt appreciation, and high-priority support access.</p>
+        </div>
+        <div class="price">$5,000</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>How to use: choose your support path, share it with friends, and unlock more content as the celebrity grows.</p>
+    </div>
+  </div>
+</body>
+</html>
